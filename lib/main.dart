@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 // import 'basic_widget/button_widget.dart';
 // import 'basic_widget/scaffold_widget.dart';
 import 'basic_form/grid_widget.dart';
+import 'basic_form/row_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const GridWIdget(),
+      home: const RowWidget(),
     );
   }
 }
