@@ -49,7 +49,6 @@ class ScaffoldWidget extends StatelessWidget {
                 height: 200.0,
                 fit: BoxFit.cover,
               ),
-              
             ],
           ),
         ),

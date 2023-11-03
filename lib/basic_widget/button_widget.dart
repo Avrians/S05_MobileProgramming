@@ -22,8 +22,10 @@ class ButtonWidget extends StatelessWidget {
                   backgroundColor: Color.fromARGB(255, 255, 255, 255),
                 ),
                 onPressed: () {},
-                child: Text("Tombol Pertama",
-                style: TextStyle(),),
+                child: Text(
+                  "Tombol Pertama",
+                  style: TextStyle(),
+                ),
               ),
             ],
           ),
