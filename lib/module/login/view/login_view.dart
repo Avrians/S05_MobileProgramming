@@ -13,30 +13,44 @@ class LoginView extends StatefulWidget {
         child: Container(
           padding: const EdgeInsets.all(10.0),
           child: Column(
-            children: const [
+            children: [
               Row(
                 children: [
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Welcome\nto MyApp",
+                          "Welcome to MyApp",
                           style: TextStyle(
-                            fontSize: 25.0,
+                            fontSize: 26.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
                           "Jangan lupa login",
                           style: TextStyle(
-                            fontSize: 12.0,
+                            fontSize: 16.0,
                           ),
                         ),
+                        SizedBox(
+                          height: 4.0,
+                        ),
                       ],
+                      
                     ),
-                  )
+                    
+                  ),
+                   Image.asset(
+                  "assets/img/logo.jpeg",
+                  width: 120.0,
+                  height: 120.0,
+                  fit: BoxFit.fill,
+                  ),
                 ],
+                
               )
+                               
             ],
           ),
         ),
