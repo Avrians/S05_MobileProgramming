@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mp_week4/core.dart';
+import 'package:mp_week4/widget/form/textfield/text_field.dart';
 import '../controller/login_controller.dart';
 
 class LoginView extends StatefulWidget {
@@ -37,20 +38,52 @@ class LoginView extends StatefulWidget {
                           height: 4.0,
                         ),
                       ],
-                      
                     ),
-                    
                   ),
-                   Image.asset(
-                  "assets/img/logo.jpeg",
-                  width: 120.0,
-                  height: 120.0,
-                  fit: BoxFit.fill,
+                  Image.asset(
+                    "assets/img/logo.jpeg",
+                    width: 120.0,
+                    height: 120.0,
+                    fit: BoxFit.fill,
                   ),
                 ],
-                
+              ),
+              Spacer(),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                child: Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      QTextField(
+                        label: "Name",
+                        validator: Validator.required,
+                        value: null,
+                        onChanged: (value) {},
+                      ),
+                      QTextField(
+                        label: "Password",
+                        validator: Validator.required,
+                        value: null,
+                        onChanged: (value) {},
+                      ),
+                      QButton(
+                        label: "Save",
+                        onPressed: () {},
+                      ),
+                      const SizedBox(
+                        height: 8.0,
+                      ),
+                      Text(
+                        "Forget Password?",
+                        style: TextStyle(
+                          fontSize: 16.0,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               )
-                               
             ],
           ),
         ),
